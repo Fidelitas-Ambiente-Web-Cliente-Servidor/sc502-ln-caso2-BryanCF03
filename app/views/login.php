@@ -5,15 +5,13 @@
 
     <title>Login</title>
 
+    <link rel="stylesheet" href="public/css/style.css">
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         rel="stylesheet">
     <script src="public/js/jquery-4.0.0.min.js"></script>
     <script src="public/js/auth.js"></script>
 </head>
-
-<body class="container mt-5">
-
     <h2>Login</h2>
 
     <form id="formLogin">
@@ -35,9 +33,6 @@
         </button>
         <a href="index.php?page=registro" class="btn btn-secondary">Registrarse</a>
     </form>
-
-
-
 </body>
 
 </html>

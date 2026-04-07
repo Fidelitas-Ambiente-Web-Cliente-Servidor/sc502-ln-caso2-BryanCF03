@@ -13,17 +13,17 @@ $page = $_GET['page'] ?? 'login';
 // ========== RUTAS GET OBTENER DATOS ==========
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
-    // Obtener listado de talleres
-    if ($_GET['option'] ?? "" == "talleres_json") {
+    $option = $_GET['option'] ?? '';
+    
+    if ($option == "talleres_json") {
         $taller = new TallerController();
         $taller->getTalleresJson();
         exit;
     }
 
-    // Obtener solicitudes pendientes
-    if ($_GET['option'] ?? "" == "solicitudes_json") {
+    if ($option == "solicitudes_json") {
         $admin = new AdminController();
-        //$admin->getSolicitudesJson();
+        $admin->getSolicitudesJson();
         exit;
     }
 }
